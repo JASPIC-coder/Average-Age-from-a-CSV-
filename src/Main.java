@@ -18,7 +18,7 @@ public class Main {
                             return null;
                         }
                     })
-                    .filter(age -> age != null) // Skip invalid ages
+                    .filter(age -> age != null) 
                     .mapToDouble(age -> age)
                     .average()
                     .orElse(0.0);
